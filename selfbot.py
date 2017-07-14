@@ -1,7 +1,6 @@
 from discord.ext import commands
 import json, sys
 
-
 try:
     with open('config.json', 'r') as cfgfile:
         config = json.load(cfgfile)
@@ -13,7 +12,7 @@ except IOError:
 bot = commands.Bot(command_prefix=config['prefix'], self_bot=True)
 
 extensions = [
-#    'cogs.profile'
+    'cogs.profile'
 ]
 
 @bot.event
