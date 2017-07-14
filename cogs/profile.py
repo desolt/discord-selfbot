@@ -8,7 +8,7 @@ class Profile:
     async def get_random_quote(member : discord.Member):
         pass
 
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, no_pm=True)
     async def profile(self, ctx, *, member : discord.Member=None):
         if member is None: member = ctx.message.server.me
 
