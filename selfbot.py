@@ -12,7 +12,8 @@ except IOError:
 bot = commands.Bot(command_prefix=config['prefix'], self_bot=True)
 
 extensions = [
-    'cogs.profile'
+    'cogs.mal',
+    'cogs.profile',
 ]
 
 @bot.event

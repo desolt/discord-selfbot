@@ -5,7 +5,7 @@ class Profile:
     def __init__(self, bot):
         self.bot = bot
 
-    async def get_random_quote(member : discord.Member):
+    async def get_random_quote(member: discord.Member):
         pass
 
     @commands.command(pass_context=True, no_pm=True)
